@@ -1,0 +1,642 @@
+[
+  {
+    "date": "Tue, Oct 21, 2025",
+    "homeTeam": "Oklahoma City Thunder",
+    "awayTeam": "Houston Rockets",
+    "homePts": 125,
+    "awayPts": 124,
+    "margin": 1
+  },
+  {
+    "date": "Tue, Oct 21, 2025",
+    "homeTeam": "Los Angeles Lakers",
+    "awayTeam": "Golden State Warriors",
+    "homePts": 109,
+    "awayPts": 119,
+    "margin": -10
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Charlotte Hornets",
+    "awayTeam": "Brooklyn Nets",
+    "homePts": 136,
+    "awayPts": 117,
+    "margin": 19
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "New York Knicks",
+    "awayTeam": "Cleveland Cavaliers",
+    "homePts": 119,
+    "awayPts": 111,
+    "margin": 8
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Orlando Magic",
+    "awayTeam": "Miami Heat",
+    "homePts": 125,
+    "awayPts": 121,
+    "margin": 4
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Boston Celtics",
+    "awayTeam": "Philadelphia 76ers",
+    "homePts": 116,
+    "awayPts": 117,
+    "margin": -1
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Atlanta Hawks",
+    "awayTeam": "Toronto Raptors",
+    "homePts": 118,
+    "awayPts": 138,
+    "margin": -20
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Chicago Bulls",
+    "awayTeam": "Detroit Pistons",
+    "homePts": 115,
+    "awayPts": 111,
+    "margin": 4
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Memphis Grizzlies",
+    "awayTeam": "New Orleans Pelicans",
+    "homePts": 128,
+    "awayPts": 122,
+    "margin": 6
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Milwaukee Bucks",
+    "awayTeam": "Washington Wizards",
+    "homePts": 133,
+    "awayPts": 120,
+    "margin": 13
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Utah Jazz",
+    "awayTeam": "Los Angeles Clippers",
+    "homePts": 129,
+    "awayPts": 108,
+    "margin": 21
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Dallas Mavericks",
+    "awayTeam": "San Antonio Spurs",
+    "homePts": 92,
+    "awayPts": 125,
+    "margin": -33
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Portland Trail Blazers",
+    "awayTeam": "Minnesota Timberwolves",
+    "homePts": 114,
+    "awayPts": 118,
+    "margin": -4
+  },
+  {
+    "date": "Wed, Oct 22, 2025",
+    "homeTeam": "Phoenix Suns",
+    "awayTeam": "Sacramento Kings",
+    "homePts": 120,
+    "awayPts": 116,
+    "margin": 4
+  },
+  {
+    "date": "Thu, Oct 23, 2025",
+    "homeTeam": "Indiana Pacers",
+    "awayTeam": "Oklahoma City Thunder",
+    "homePts": 135,
+    "awayPts": 141,
+    "margin": -6
+  },
+  {
+    "date": "Thu, Oct 23, 2025",
+    "homeTeam": "Golden State Warriors",
+    "awayTeam": "Denver Nuggets",
+    "homePts": 137,
+    "awayPts": 131,
+    "margin": 6
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Toronto Raptors",
+    "awayTeam": "Milwaukee Bucks",
+    "homePts": 116,
+    "awayPts": 122,
+    "margin": -6
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Orlando Magic",
+    "awayTeam": "Atlanta Hawks",
+    "homePts": 107,
+    "awayPts": 111,
+    "margin": -4
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Brooklyn Nets",
+    "awayTeam": "Cleveland Cavaliers",
+    "homePts": 124,
+    "awayPts": 131,
+    "margin": -7
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "New York Knicks",
+    "awayTeam": "Boston Celtics",
+    "homePts": 105,
+    "awayPts": 95,
+    "margin": 10
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Houston Rockets",
+    "awayTeam": "Detroit Pistons",
+    "homePts": 111,
+    "awayPts": 115,
+    "margin": -4
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "New Orleans Pelicans",
+    "awayTeam": "San Antonio Spurs",
+    "homePts": 116,
+    "awayPts": 120,
+    "margin": -4
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Memphis Grizzlies",
+    "awayTeam": "Miami Heat",
+    "homePts": 114,
+    "awayPts": 146,
+    "margin": -32
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Dallas Mavericks",
+    "awayTeam": "Washington Wizards",
+    "homePts": 107,
+    "awayPts": 117,
+    "margin": -10
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Los Angeles Lakers",
+    "awayTeam": "Minnesota Timberwolves",
+    "homePts": 128,
+    "awayPts": 110,
+    "margin": 18
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Portland Trail Blazers",
+    "awayTeam": "Golden State Warriors",
+    "homePts": 139,
+    "awayPts": 119,
+    "margin": 20
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Sacramento Kings",
+    "awayTeam": "Utah Jazz",
+    "homePts": 105,
+    "awayPts": 104,
+    "margin": 1
+  },
+  {
+    "date": "Fri, Oct 24, 2025",
+    "homeTeam": "Los Angeles Clippers",
+    "awayTeam": "Phoenix Suns",
+    "homePts": 129,
+    "awayPts": 102,
+    "margin": 27
+  },
+  {
+    "date": "Sat, Oct 25, 2025",
+    "homeTeam": "Orlando Magic",
+    "awayTeam": "Chicago Bulls",
+    "homePts": 98,
+    "awayPts": 110,
+    "margin": -12
+  },
+  {
+    "date": "Sat, Oct 25, 2025",
+    "homeTeam": "Atlanta Hawks",
+    "awayTeam": "Oklahoma City Thunder",
+    "homePts": 100,
+    "awayPts": 117,
+    "margin": -17
+  },
+  {
+    "date": "Sat, Oct 25, 2025",
+    "homeTeam": "Philadelphia 76ers",
+    "awayTeam": "Charlotte Hornets",
+    "homePts": 125,
+    "awayPts": 121,
+    "margin": 4
+  },
+  {
+    "date": "Sat, Oct 25, 2025",
+    "homeTeam": "Memphis Grizzlies",
+    "awayTeam": "Indiana Pacers",
+    "homePts": 128,
+    "awayPts": 103,
+    "margin": 25
+  },
+  {
+    "date": "Sat, Oct 25, 2025",
+    "homeTeam": "Denver Nuggets",
+    "awayTeam": "Phoenix Suns",
+    "homePts": 133,
+    "awayPts": 111,
+    "margin": 22
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "San Antonio Spurs",
+    "awayTeam": "Brooklyn Nets",
+    "homePts": 118,
+    "awayPts": 107,
+    "margin": 11
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "Detroit Pistons",
+    "awayTeam": "Boston Celtics",
+    "homePts": 119,
+    "awayPts": 113,
+    "margin": 6
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "Washington Wizards",
+    "awayTeam": "Charlotte Hornets",
+    "homePts": 113,
+    "awayPts": 139,
+    "margin": -26
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "Miami Heat",
+    "awayTeam": "New York Knicks",
+    "homePts": 115,
+    "awayPts": 107,
+    "margin": 8
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "Cleveland Cavaliers",
+    "awayTeam": "Milwaukee Bucks",
+    "homePts": 118,
+    "awayPts": 113,
+    "margin": 5
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "Minnesota Timberwolves",
+    "awayTeam": "Indiana Pacers",
+    "homePts": 114,
+    "awayPts": 110,
+    "margin": 4
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "Dallas Mavericks",
+    "awayTeam": "Toronto Raptors",
+    "homePts": 139,
+    "awayPts": 129,
+    "margin": 10
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "Sacramento Kings",
+    "awayTeam": "Los Angeles Lakers",
+    "homePts": 120,
+    "awayPts": 127,
+    "margin": -7
+  },
+  {
+    "date": "Sun, Oct 26, 2025",
+    "homeTeam": "Los Angeles Clippers",
+    "awayTeam": "Portland Trail Blazers",
+    "homePts": 114,
+    "awayPts": 107,
+    "margin": 7
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Detroit Pistons",
+    "awayTeam": "Cleveland Cavaliers",
+    "homePts": 95,
+    "awayPts": 116,
+    "margin": -21
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Philadelphia 76ers",
+    "awayTeam": "Orlando Magic",
+    "homePts": 136,
+    "awayPts": 124,
+    "margin": 12
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Chicago Bulls",
+    "awayTeam": "Atlanta Hawks",
+    "homePts": 128,
+    "awayPts": 123,
+    "margin": 5
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Houston Rockets",
+    "awayTeam": "Brooklyn Nets",
+    "homePts": 137,
+    "awayPts": 109,
+    "margin": 28
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "New Orleans Pelicans",
+    "awayTeam": "Boston Celtics",
+    "homePts": 90,
+    "awayPts": 122,
+    "margin": -32
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "San Antonio Spurs",
+    "awayTeam": "Toronto Raptors",
+    "homePts": 121,
+    "awayPts": 103,
+    "margin": 18
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Dallas Mavericks",
+    "awayTeam": "Oklahoma City Thunder",
+    "homePts": 94,
+    "awayPts": 101,
+    "margin": -7
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Utah Jazz",
+    "awayTeam": "Phoenix Suns",
+    "homePts": 138,
+    "awayPts": 134,
+    "margin": 4
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Minnesota Timberwolves",
+    "awayTeam": "Denver Nuggets",
+    "homePts": 114,
+    "awayPts": 127,
+    "margin": -13
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Golden State Warriors",
+    "awayTeam": "Memphis Grizzlies",
+    "homePts": 131,
+    "awayPts": 118,
+    "margin": 13
+  },
+  {
+    "date": "Mon, Oct 27, 2025",
+    "homeTeam": "Los Angeles Lakers",
+    "awayTeam": "Portland Trail Blazers",
+    "homePts": 108,
+    "awayPts": 122,
+    "margin": -14
+  },
+  {
+    "date": "Tue, Oct 28, 2025",
+    "homeTeam": "Washington Wizards",
+    "awayTeam": "Philadelphia 76ers",
+    "homePts": 134,
+    "awayPts": 139,
+    "margin": -5
+  },
+  {
+    "date": "Tue, Oct 28, 2025",
+    "homeTeam": "Miami Heat",
+    "awayTeam": "Charlotte Hornets",
+    "homePts": 144,
+    "awayPts": 117,
+    "margin": 27
+  },
+  {
+    "date": "Tue, Oct 28, 2025",
+    "homeTeam": "Milwaukee Bucks",
+    "awayTeam": "New York Knicks",
+    "homePts": 121,
+    "awayPts": 111,
+    "margin": 10
+  },
+  {
+    "date": "Tue, Oct 28, 2025",
+    "homeTeam": "Oklahoma City Thunder",
+    "awayTeam": "Sacramento Kings",
+    "homePts": 107,
+    "awayPts": 101,
+    "margin": 6
+  },
+  {
+    "date": "Tue, Oct 28, 2025",
+    "homeTeam": "Golden State Warriors",
+    "awayTeam": "Los Angeles Clippers",
+    "homePts": 98,
+    "awayPts": 79,
+    "margin": 19
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Toronto Raptors",
+    "awayTeam": "Houston Rockets",
+    "homePts": 121,
+    "awayPts": 139,
+    "margin": -18
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Boston Celtics",
+    "awayTeam": "Cleveland Cavaliers",
+    "homePts": 125,
+    "awayPts": 105,
+    "margin": 20
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Detroit Pistons",
+    "awayTeam": "Orlando Magic",
+    "homePts": 135,
+    "awayPts": 116,
+    "margin": 19
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Brooklyn Nets",
+    "awayTeam": "Atlanta Hawks",
+    "homePts": 112,
+    "awayPts": 117,
+    "margin": -5
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Chicago Bulls",
+    "awayTeam": "Sacramento Kings",
+    "homePts": 126,
+    "awayPts": 113,
+    "margin": 13
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Dallas Mavericks",
+    "awayTeam": "Indiana Pacers",
+    "homePts": 107,
+    "awayPts": 105,
+    "margin": 2
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Utah Jazz",
+    "awayTeam": "Portland Trail Blazers",
+    "homePts": 134,
+    "awayPts": 136,
+    "margin": -2
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Denver Nuggets",
+    "awayTeam": "New Orleans Pelicans",
+    "homePts": 122,
+    "awayPts": 88,
+    "margin": 34
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Minnesota Timberwolves",
+    "awayTeam": "Los Angeles Lakers",
+    "homePts": 115,
+    "awayPts": 116,
+    "margin": -1
+  },
+  {
+    "date": "Wed, Oct 29, 2025",
+    "homeTeam": "Phoenix Suns",
+    "awayTeam": "Memphis Grizzlies",
+    "homePts": 113,
+    "awayPts": 114,
+    "margin": -1
+  },
+  {
+    "date": "Thu, Oct 30, 2025",
+    "homeTeam": "Charlotte Hornets",
+    "awayTeam": "Orlando Magic",
+    "homePts": 107,
+    "awayPts": 123,
+    "margin": -16
+  },
+  {
+    "date": "Thu, Oct 30, 2025",
+    "homeTeam": "Milwaukee Bucks",
+    "awayTeam": "Golden State Warriors",
+    "homePts": 120,
+    "awayPts": 110,
+    "margin": 10
+  },
+  {
+    "date": "Thu, Oct 30, 2025",
+    "homeTeam": "Oklahoma City Thunder",
+    "awayTeam": "Washington Wizards",
+    "homePts": 127,
+    "awayPts": 108,
+    "margin": 19
+  },
+  {
+    "date": "Thu, Oct 30, 2025",
+    "homeTeam": "San Antonio Spurs",
+    "awayTeam": "Miami Heat",
+    "homePts": 107,
+    "awayPts": 101,
+    "margin": 6
+  },
+  {
+    "date": "Fri, Oct 31, 2025",
+    "homeTeam": "Indiana Pacers",
+    "awayTeam": "Atlanta Hawks",
+    "homePts": 108,
+    "awayPts": 128,
+    "margin": -20
+  },
+  {
+    "date": "Fri, Oct 31, 2025",
+    "homeTeam": "Philadelphia 76ers",
+    "awayTeam": "Boston Celtics",
+    "homePts": 108,
+    "awayPts": 109,
+    "margin": -1
+  },
+  {
+    "date": "Fri, Oct 31, 2025",
+    "homeTeam": "Cleveland Cavaliers",
+    "awayTeam": "Toronto Raptors",
+    "homePts": 101,
+    "awayPts": 112,
+    "margin": -11
+  },
+  {
+    "date": "Fri, Oct 31, 2025",
+    "homeTeam": "Chicago Bulls",
+    "awayTeam": "New York Knicks",
+    "homePts": 135,
+    "awayPts": 125,
+    "margin": 10
+  },
+  {
+    "date": "Fri, Oct 31, 2025",
+    "homeTeam": "Memphis Grizzlies",
+    "awayTeam": "Los Angeles Lakers",
+    "homePts": 112,
+    "awayPts": 117,
+    "margin": -5
+  },
+  {
+    "date": "Fri, Oct 31, 2025",
+    "homeTeam": "Phoenix Suns",
+    "awayTeam": "Utah Jazz",
+    "homePts": 118,
+    "awayPts": 96,
+    "margin": 22
+  },
+  {
+    "date": "Fri, Oct 31, 2025",
+    "homeTeam": "Portland Trail Blazers",
+    "awayTeam": "Denver Nuggets",
+    "homePts": 109,
+    "awayPts": 107,
+    "margin": 2
+  },
+  {
+    "date": "Fri, Oct 31, 2025",
+    "homeTeam": "Los Angeles Clippers",
+    "awayTeam": "New Orleans Pelicans",
+    "homePts": 126,
+    "awayPts": 124,
+    "margin": 2
+  }
+]
