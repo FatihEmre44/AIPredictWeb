@@ -1,58 +1,50 @@
 const brain = require('brain.js');
 const fs = require('fs');
 const path = require('path');
+const { nbaEloList } = require('./stats');
+const { normalize } = require('./proces/normalizer');
 
-const modelPath = path.join(__dirname, 'models/nba-brain.json');
-
-if (!fs.existsSync(modelPath)) {
-    console.error('❌ Hata: Model dosyası bulunamadı! Önce training.js dosyasını çalıştır.');
-    process.exit(1);
-}
-
+// 1. Eğitilmiş modeli yükle
+const modelPath = path.join(__dirname, 'models', 'nba-brain.json');
 const modelData = JSON.parse(fs.readFileSync(modelPath, 'utf8'));
+
 const net = new brain.NeuralNetwork();
 net.fromJSON(modelData);
 
-const MAX_ELO = 2500;
-const MAX_REST = 7;
-const MAX_MARGIN = 30; // Must match normalizer scale
+// 2. Tahmin Fonksiyonu
+const predictMatch = (homeTeam, awayTeam, homeLast5, awayLast5, homeRest, awayRest) => {
+    // 1. Veriyi hazırla
+    const rawInput = {
+        homeElo: nbaEloList[homeTeam] || 1500,
+        awayElo: nbaEloList[awayTeam] || 1500,
+        homeLast5WinRate: homeLast5,
+        awayLast5WinRate: awayLast5,
+        homeRestDays: homeRest,
+        awayRestDays: awayRest
+    };
 
-const rawMatchData = {
-    homeElo: 1606, // Equal strength
-    awayElo: 1600,
-    homeRestDays: 2,
-    awayRestDays: 3,
-    homeLast5WinRate: 0.7,
-    awayLast5WinRate: 0.6
+    // 2. Normalize et
+    const input = normalize(rawInput);
+
+    // 3. KRİTİK KONTROL: Eğer input null ise hatayı yakala
+    if (!input) {
+        console.error(`❌ Hata: ${homeTeam} veya ${awayTeam} için veriler normalize edilemedi. Lütfen girdi değerlerini kontrol et.`);
+        return;
+    }
+
+    // 4. Modeli çalıştır
+    try {
+        const output = net.run(input);
+        
+        console.log(`\n🏀 ${homeTeam} vs ${awayTeam}`);
+        console.log(`📈 Ev Sahibi Galibiyet Olasılığı: %${(output.homeWin * 100).toFixed(2)}`);
+    } catch (err) {
+        console.error("❌ Tahmin sırasında bir hata oluştu:", err.message);
+    }
 };
 
-const tonightGame = {
-    homeStrength: rawMatchData.homeElo / MAX_ELO,
-    awayStrength: rawMatchData.awayElo / MAX_ELO,
-    homeRest: Math.min(rawMatchData.homeRestDays / MAX_REST, 1),
-    awayRest: Math.min(rawMatchData.awayRestDays / MAX_REST, 1),
-    homeForm: rawMatchData.homeLast5WinRate,
-    awayForm: rawMatchData.awayLast5WinRate
-};
-
-const output = net.run(tonightGame);
-
-// 1. PURE AI output for the point margin (Regression)
-const predictedMargin = ((output.expectedMargin * 2) - 1) * MAX_MARGIN;
-
-// 2. PURE AI output for win probability (Classification)
-const winProbFactor = output.homeWin; 
-const winProb = (winProbFactor * 100).toFixed(1);
-
-console.log(`\n🏀 2026 PLAYOFF ANALİZİ`);
-console.log(`-------------------------`);
-console.log(`📊 Tahmini Sayı Farkı (AI): ${predictedMargin > 0 ? '+' : ''}${predictedMargin.toFixed(1)} (Ev Sahibi lehine)`);
-console.log(`🎯 Ev Sahibi Kazanma İhtimali (AI): %${winProb}`);
-
-if (predictedMargin > 6 && winProbFactor > 0.65) {
-    console.log(`🔥 ÖNERİ: Güçlü Ev Sahibi`);
-} else if (predictedMargin < -6 && winProbFactor < 0.35) {
-    console.log(`🧊 ÖNERİ: Güçlü Deplasman`);
-} else {
-    console.log(`⚖️ ÖNERİ: Yakın Maç`);
-}
+// ÖRNEK TEST:
+// Lakers vs Celtics maçı olsun.
+// Lakers evinde, son 5 maçta %80 galibiyet, 3 gün dinlenmiş.
+// Celtics deplasmanda, son 5 maçta %40 galibiyet, 1 gün dinlenmiş.
+predictMatch("Miami Heat", "Golden State Warriors", 0.6, 0.8, 1, 1);

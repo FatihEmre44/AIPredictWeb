@@ -1,0 +1,35 @@
+
+const nbaEloList = {
+    "Boston Celtics": 1710,
+    "Denver Nuggets": 1680,
+    "Oklahoma City Thunder": 1640,
+    "Milwaukee Bucks": 1610,
+    "Minnesota Timberwolves": 1600,
+    "Dallas Mavericks": 1590,
+    "Philadelphia 76ers": 1580,
+    "Los Angeles Clippers": 1570,
+    "New York Knicks": 1560,
+    "Phoenix Suns": 1550,
+    "Los Angeles Lakers": 1540,
+    "Indiana Pacers": 1535,
+    "Golden State Warriors": 1530,
+    "Miami Heat": 1520,
+    "Sacramento Kings": 1510,
+    "Cleveland Cavaliers": 1500,
+    "New Orleans Pelicans": 1495,
+    "Orlando Magic": 1490,
+    "Houston Rockets": 1485,
+    "Chicago Bulls": 1480,
+    "Atlanta Hawks": 1470,
+    "Memphis Grizzlies": 1460,
+    "Brooklyn Nets": 1440,
+    "Toronto Raptors": 1430,
+    "San Antonio Spurs": 1420,
+    "Utah Jazz": 1410,
+    "Charlotte Hornets": 1390,
+    "Portland Trail Blazers": 1380,
+    "Washington Wizards": 1360,
+    "Detroit Pistons": 1350
+};
+
+module.exports = { nbaEloList };

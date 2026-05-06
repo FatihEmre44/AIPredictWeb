@@ -26,6 +26,7 @@ const getdata = async () => {
                     homePts: parseInt(homePts),
                     awayPts: parseInt(awayPts),
                     margin: parseInt(homePts) - parseInt(awayPts)
+                    game
                 });
             }
         });
