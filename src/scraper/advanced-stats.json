@@ -1,0 +1,302 @@
+{
+  "1610612737": {
+    "teamName": "Atlanta Hawks",
+    "offRating": 116.4,
+    "defRating": 118.4,
+    "pace": 100.84,
+    "efg": 0.539,
+    "tov": null,
+    "orb": 0.308,
+    "drb": 0.717
+  },
+  "1610612738": {
+    "teamName": "Boston Celtics",
+    "offRating": 122.2,
+    "defRating": 110.6,
+    "pace": 97.98,
+    "efg": 0.578,
+    "tov": null,
+    "orb": 0.287,
+    "drb": 0.726
+  },
+  "1610612739": {
+    "teamName": "Cleveland Cavaliers",
+    "offRating": 114.7,
+    "defRating": 112.1,
+    "pace": 97.62,
+    "efg": 0.557,
+    "tov": null,
+    "orb": 0.274,
+    "drb": 0.721
+  },
+  "1610612740": {
+    "teamName": "New Orleans Pelicans",
+    "offRating": 116.5,
+    "defRating": 111.9,
+    "pace": 98.7,
+    "efg": 0.558,
+    "tov": null,
+    "orb": 0.278,
+    "drb": 0.725
+  },
+  "1610612741": {
+    "teamName": "Chicago Bulls",
+    "offRating": 114,
+    "defRating": 115.7,
+    "pace": 96.94,
+    "efg": 0.534,
+    "tov": null,
+    "orb": 0.291,
+    "drb": 0.717
+  },
+  "1610612742": {
+    "teamName": "Dallas Mavericks",
+    "offRating": 117,
+    "defRating": 114.9,
+    "pace": 100.6,
+    "efg": 0.562,
+    "tov": null,
+    "orb": 0.257,
+    "drb": 0.711
+  },
+  "1610612743": {
+    "teamName": "Denver Nuggets",
+    "offRating": 117.8,
+    "defRating": 112.3,
+    "pace": 97.43,
+    "efg": 0.562,
+    "tov": null,
+    "orb": 0.3,
+    "drb": 0.718
+  },
+  "1610612744": {
+    "teamName": "Golden State Warriors",
+    "offRating": 116.9,
+    "defRating": 114.5,
+    "pace": 99.91,
+    "efg": 0.557,
+    "tov": null,
+    "orb": 0.315,
+    "drb": 0.725
+  },
+  "1610612745": {
+    "teamName": "Houston Rockets",
+    "offRating": 113.7,
+    "defRating": 112.8,
+    "pace": 99.59,
+    "efg": 0.529,
+    "tov": null,
+    "orb": 0.294,
+    "drb": 0.722
+  },
+  "1610612746": {
+    "teamName": "LA Clippers",
+    "offRating": 117.9,
+    "defRating": 114.6,
+    "pace": 97.93,
+    "efg": 0.561,
+    "tov": null,
+    "orb": 0.283,
+    "drb": 0.705
+  },
+  "1610612747": {
+    "teamName": "Los Angeles Lakers",
+    "offRating": 115.4,
+    "defRating": 114.8,
+    "pace": 101.38,
+    "efg": 0.566,
+    "tov": null,
+    "orb": 0.244,
+    "drb": 0.725
+  },
+  "1610612748": {
+    "teamName": "Miami Heat",
+    "offRating": 113.3,
+    "defRating": 111.5,
+    "pace": 96.88,
+    "efg": 0.538,
+    "tov": null,
+    "orb": 0.261,
+    "drb": 0.734
+  },
+  "1610612749": {
+    "teamName": "Milwaukee Bucks",
+    "offRating": 117.6,
+    "defRating": 115,
+    "pace": 100.51,
+    "efg": 0.568,
+    "tov": null,
+    "orb": 0.255,
+    "drb": 0.731
+  },
+  "1610612750": {
+    "teamName": "Minnesota Timberwolves",
+    "offRating": 114.6,
+    "defRating": 108.4,
+    "pace": 97.79,
+    "efg": 0.559,
+    "tov": null,
+    "orb": 0.275,
+    "drb": 0.725
+  },
+  "1610612751": {
+    "teamName": "Brooklyn Nets",
+    "offRating": 112.4,
+    "defRating": 115.4,
+    "pace": 97.56,
+    "efg": 0.531,
+    "tov": null,
+    "orb": 0.289,
+    "drb": 0.715
+  },
+  "1610612752": {
+    "teamName": "New York Knicks",
+    "offRating": 117.3,
+    "defRating": 112.4,
+    "pace": 95.96,
+    "efg": 0.54,
+    "tov": null,
+    "orb": 0.333,
+    "drb": 0.729
+  },
+  "1610612753": {
+    "teamName": "Orlando Magic",
+    "offRating": 112.9,
+    "defRating": 110.8,
+    "pace": 97.37,
+    "efg": 0.541,
+    "tov": null,
+    "orb": 0.297,
+    "drb": 0.737
+  },
+  "1610612754": {
+    "teamName": "Indiana Pacers",
+    "offRating": 120.5,
+    "defRating": 117.6,
+    "pace": 102.16,
+    "efg": 0.578,
+    "tov": null,
+    "orb": 0.284,
+    "drb": 0.7
+  },
+  "1610612755": {
+    "teamName": "Philadelphia 76ers",
+    "offRating": 116.2,
+    "defRating": 113,
+    "pace": 98.17,
+    "efg": 0.532,
+    "tov": null,
+    "orb": 0.292,
+    "drb": 0.701
+  },
+  "1610612756": {
+    "teamName": "Phoenix Suns",
+    "offRating": 116.8,
+    "defRating": 113.7,
+    "pace": 99,
+    "efg": 0.565,
+    "tov": null,
+    "orb": 0.292,
+    "drb": 0.714
+  },
+  "1610612757": {
+    "teamName": "Portland Trail Blazers",
+    "offRating": 107.6,
+    "defRating": 116.6,
+    "pace": 97.88,
+    "efg": 0.503,
+    "tov": null,
+    "orb": 0.32,
+    "drb": 0.697
+  },
+  "1610612758": {
+    "teamName": "Sacramento Kings",
+    "offRating": 116.2,
+    "defRating": 114.4,
+    "pace": 99.46,
+    "efg": 0.556,
+    "tov": null,
+    "orb": 0.285,
+    "drb": 0.744
+  },
+  "1610612759": {
+    "teamName": "San Antonio Spurs",
+    "offRating": 109.3,
+    "defRating": 115.6,
+    "pace": 101.8,
+    "efg": 0.532,
+    "tov": null,
+    "orb": 0.269,
+    "drb": 0.721
+  },
+  "1610612760": {
+    "teamName": "Oklahoma City Thunder",
+    "offRating": 118.3,
+    "defRating": 111,
+    "pace": 100.85,
+    "efg": 0.573,
+    "tov": null,
+    "orb": 0.25,
+    "drb": 0.698
+  },
+  "1610612761": {
+    "teamName": "Toronto Raptors",
+    "offRating": 111.8,
+    "defRating": 118.1,
+    "pace": 99.91,
+    "efg": 0.535,
+    "tov": null,
+    "orb": 0.281,
+    "drb": 0.694
+  },
+  "1610612762": {
+    "teamName": "Utah Jazz",
+    "offRating": 114.5,
+    "defRating": 119.6,
+    "pace": 100.26,
+    "efg": 0.539,
+    "tov": null,
+    "orb": 0.325,
+    "drb": 0.717
+  },
+  "1610612763": {
+    "teamName": "Memphis Grizzlies",
+    "offRating": 106.8,
+    "defRating": 113.7,
+    "pace": 98.68,
+    "efg": 0.509,
+    "tov": null,
+    "orb": 0.287,
+    "drb": 0.706
+  },
+  "1610612764": {
+    "teamName": "Washington Wizards",
+    "offRating": 110.2,
+    "defRating": 118.9,
+    "pace": 103.07,
+    "efg": 0.538,
+    "tov": null,
+    "orb": 0.24,
+    "drb": 0.683
+  },
+  "1610612765": {
+    "teamName": "Detroit Pistons",
+    "offRating": 109,
+    "defRating": 118,
+    "pace": 100.45,
+    "efg": 0.526,
+    "tov": null,
+    "orb": 0.277,
+    "drb": 0.73
+  },
+  "1610612766": {
+    "teamName": "Charlotte Hornets",
+    "offRating": 108.6,
+    "defRating": 119.2,
+    "pace": 97.81,
+    "efg": 0.529,
+    "tov": null,
+    "orb": 0.253,
+    "drb": 0.709
+  }
+}

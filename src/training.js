@@ -11,6 +11,7 @@ const modelSavePath = path.join(__dirname, 'models', 'nba-brain.json');
 
 // Takımın son 5 maçtaki galibiyet oranını bulur
 const getWinRate = (allMatches, teamName, currentDate) => {
+    if (!currentDate) return 0.5;
     const pastMatches = allMatches.filter(m => 
         (m.homeTeam === teamName || m.awayTeam === teamName) && 
         new Date(m.date) < new Date(currentDate)
@@ -28,6 +29,7 @@ const getWinRate = (allMatches, teamName, currentDate) => {
 
 // Takımın kaç gündür dinlendiğini bulur
 const getRestDays = (allMatches, teamName, currentDate) => {
+    if (!currentDate) return 3;
     const lastMatch = allMatches.filter(m => 
         (m.homeTeam === teamName || m.awayTeam === teamName) && 
         new Date(m.date) < new Date(currentDate)
@@ -40,54 +42,73 @@ const getRestDays = (allMatches, teamName, currentDate) => {
     return Math.min(diffDays, 7); // Max 7 gün sayalım (Normalizer'ına uygun)
 };
 
-// --- ANA EĞİTİM FONKSİYONU ---
+
+// ... (üstteki importlar aynı kalıyor)
 
 const trainModel = () => {
     try {
         const rawData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-        // Maçları tarihe göre dizelim ki geçmişi doğru hesaplayalım
-        const sortedData = rawData.sort((a, b) => new Date(a.date) - new Date(b.date));
+        const sortedData = rawData.sort((a, b) => {
+            if (!a.date || !b.date) return 0;
+            return new Date(a.date) - new Date(b.date);
+        });
 
-        const trainingData = sortedData.map((game, idx) => {
+        const trainingData = sortedData.map((game) => {
             const hElo = nbaEloList[game.homeTeam] || 1500;
             const aElo = nbaEloList[game.awayTeam] || 1500;
 
-            // Gerçek zamanlı form ve dinlenme hesaplama
-            const hWinRate = getWinRate(sortedData, game.homeTeam, game.date);
-            const aWinRate = getWinRate(sortedData, game.awayTeam, game.date);
-            const hRest = getRestDays(sortedData, game.homeTeam, game.date);
-            const aRest = getRestDays(sortedData, game.awayTeam, game.date);
-
+            // Zenginleştirilmiş Verileri Hazırla
             const gameData = {
                 homeScore: game.homePts,
                 awayScore: game.awayPts,
                 homeElo: hElo,
                 awayElo: aElo,
-                homeRestDays: hRest,
-                awayRestDays: aRest,
-                homeLast5WinRate: hWinRate,
-                awayLast5WinRate: aWinRate
+                // Yeni Gelen İleri İstatistikler (Scraper'dan geliyor)
+                homeOffRating: game.homeStats?.offRating || 110,
+                homeDefRating: game.homeStats?.defRating || 110,
+                homePace: game.homeStats?.pace || 98,
+                homeEfg: game.homeStats?.efg || 0.52,
+                homeTov: game.homeStats?.tov || 0.14,
+                homeOrb: game.homeStats?.orb || 0.25,
+                homeDrb: game.homeStats?.drb || 0.75,
+                awayOffRating: game.awayStats?.offRating || 110,
+                awayDefRating: game.awayStats?.defRating || 110,
+                awayPace: game.awayStats?.pace || 98,
+                awayEfg: game.awayStats?.efg || 0.52,
+                awayTov: game.awayStats?.tov || 0.14,
+                awayOrb: game.awayStats?.orb || 0.25,
+                awayDrb: game.awayStats?.drb || 0.75,
+                // Form ve Dinlenme (Fonksiyonlardan geliyor)
+                homeRestDays: getRestDays(sortedData, game.homeTeam, game.date),
+                awayRestDays: getRestDays(sortedData, game.awayTeam, game.date),
+                homeLast5WinRate: getWinRate(sortedData, game.homeTeam, game.date),
+                awayLast5WinRate: getWinRate(sortedData, game.awayTeam, game.date)
             };
 
             return normalize(gameData);
         }).filter(item => item !== null);
 
-        const net = new brain.NeuralNetwork({ hiddenLayers: [6, 4] }); // Katmanları biraz artırdık
+        // Beyin yapısını derinleştiriyoruz: [10, 8, 4]
+        // Daha fazla input (girdi) olduğu için nöron sayısını biraz artırdık
+        const net = new brain.NeuralNetwork({ 
+            hiddenLayers: [10, 8, 4],
+            activation: 'leaky-relu' // Sigmoid yerine daha esnek olan Leaky ReLU
+        });
 
-        console.log(`🚀 ${trainingData.length} maç analiz edildi. Derin eğitim başlıyor...`);
+        console.log(`🚀 ${trainingData.length} maç zenginleştirilmiş veriyle eğitiliyor...`);
 
         net.train(trainingData, {
-            iterations: 10000,
+            iterations: 8000, 
             log: true,
             logPeriod: 1000,
-            learningRate: 0.1
+            learningRate: 0.05 // Daha yavaş ama sağlam öğrenme
         });
 
         fs.writeFileSync(modelSavePath, JSON.stringify(net.toJSON(), null, 2));
-        console.log(`✅ NBA Zekası Oluşturuldu: ${modelSavePath}`);
+        console.log(`✅ Süper Zeka Oluşturuldu: ${modelSavePath}`);
 
     } catch (error) {
-        console.error("❌ Hata:", error.message);
+        console.error("❌ Eğitim Hatası:", error.message);
     }
 };
 
